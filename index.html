@@ -12,9 +12,29 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body class="bg-[#f4f5f7] ">
-    <form>
-
+  <body
+    class="bg-[#f4f5f7] flex-col h-[100vh] flex justify-center items-center"
+  >
+    <form class="w-[350px] bg-white rounded-2x1 p-8">
+      <div>
+        <label class="font-semibold text-2xl">Mobile Number</label>
+        <input
+          type="text"
+          placeholder="Enter your number"
+          class="bg-[#f4f5f7] rounded-full p-2 w-full my-3"
+        />
+      </div>
+      <div>
+        <label class="font-semibold text-2xl">4 Digit Pin</label>
+        <input
+          type="number"
+          placeholder="Enter 4 Digit Pin"
+          class="bg-[#f4f5f7] rounded-full p-2 w-full my-3"
+        />
+      </div>
+      <button class="btn bg-[#0874F2] w-full text-white rounded-full">
+        Login
+      </button>
     </form>
   </body>
 </html>
