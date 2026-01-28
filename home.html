@@ -71,24 +71,28 @@
         <h4 class="font-semibold">Cashout</h4>
       </div>
       <div
+        id="transfer-button"
         class="rounded-3xl border-1 border-gray-300 flex flex-col justify-center items-center bg-white"
       >
         <img class="" src="./assets/money1.png" alt="" />
         <h4 class="font-semibold">Transfer Money</h4>
       </div>
       <div
+      id="bonus-button"
         class="rounded-3xl border-1 border-gray-300 flex flex-col justify-center items-center bg-white"
       >
         <img class="" src="./assets/money1.png" alt="" />
         <h4 class="font-semibold">Get Bonus</h4>
       </div>
       <div
+      id="bill-button"
         class="rounded-3xl border-1 border-gray-300 flex flex-col justify-center items-center bg-white"
       >
         <img class="" src="./assets/money1.png" alt="" />
         <h4 class="font-semibold">Pay Bill</h4>
       </div>
       <div
+      id="transactions-button"
         class="rounded-3xl border-1 border-gray-300 flex flex-col justify-center items-center bg-white"
       >
         <img src="./assets/money1.png" alt="" />
@@ -98,7 +102,7 @@
 
     <div class="all-form-sections max-w-lg mx-auto">
       <!-- add money section  -->
-      <div id="add-money-parent">
+      <div class="form" id="add-money-parent" style="display: none">
         <h3 class="mt-10 text-xl font-bold mb-3">Add Money</h3>
         <form class="bg-white px-5">
           <div class="flex flex-col">
@@ -147,11 +151,10 @@
         </form>
       </div>
 
-      <div id="cash-out-parent" style="display: none">
+      <!-- cash out section -->
+      <div class="form" id="cash-out-parent" style="display: none">
         <h3 class="mt-10 text-xl font-bold mb-3">Cash Out</h3>
         <form class="bg-white px-5">
-
-
           <div class="mt-3">
             <label class="font-semibold">Agent Number</label>
             <input
@@ -163,7 +166,7 @@
           </div>
           <div class="mt-3">
             <label class="font-semibold">Amount</label>
-            <br><input
+            <br /><input
               id="withdraw-amount"
               type="text"
               placeholder="Enter Amount to withdraw"
@@ -189,6 +192,24 @@
       </div>
     </div>
 
-<script src="./home.js"></script>
+    <!-- transfer money section -->
+    <div class="form" id="transfer-money-parent" style="display: none">
+      <h1 class="my-5 font-bold">Transfer Money</h1>
+    </div>
+
+    <!-- get bonus section -->
+    <div class="form" id="bonus-parent" style="display: none">
+      <h1 class="my-5 font-bold">Get Bonus</h1>
+    </div>
+    <!-- pay bill section -->
+    <div class="form" id="pay-bill-parent" style="display: none">
+      <h1 class="my-5 font-bold">Pay Bill</h1>
+    </div>
+    <!-- transactions section -->
+    <div class="form" id="transactions-parent" style="display: none">
+      <h1 class="my-5 font-bold">Transactions</h1>
+    </div>
+
+    <script src="./home.js"></script>
   </body>
 </html>
