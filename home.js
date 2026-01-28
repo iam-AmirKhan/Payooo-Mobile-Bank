@@ -58,32 +58,94 @@ document.getElementById("withdraw-btn").addEventListener("click", function (e) {
 
 document.getElementById("add-button").addEventListener("click", function () {
   handleToggle("add-money-parent");
+
+const formBtns = document.getElementsByClassName("form-btn")
+
+for (const btn of formBtns){
+  btn.classList.remove("border-[#0874f2]", "bg-[#0874f20d]")
+  btn.classList.add("border-gray-300","bg-white")
+}
+document.getElementById("add-button").classList.remove("border-gray-300","bg-white")
+document.getElementById("add-button").classList.add("border-[#0874f2]", "bg-[#0874f20d]")
+
+
+
 });
 
 document
   .getElementById("cash-out-button")
   .addEventListener("click", function () {
     handleToggle("cash-out-parent");
+const formBtns = document.getElementsByClassName("form-btn")
+
+for (const btn of formBtns){
+  btn.classList.remove("border-[#0874f2]", "bg-[#0874f20d]")
+  btn.classList.add("border-gray-300","bg-white")
+}
+document.getElementById("cash-out-button").classList.remove("border-gray-300","bg-white")
+document.getElementById("cash-out-button").classList.add("border-[#0874f2]", "bg-[#0874f20d]")
+
+
   });
 
 document
   .getElementById("transfer-button")
   .addEventListener("click", function () {
     handleToggle("transfer-money-parent");
+  
+const formBtns = document.getElementsByClassName("form-btn")
+
+for (const btn of formBtns){
+  btn.classList.remove("border-[#0874f2]", "bg-[#0874f20d]")
+  btn.classList.add("border-gray-300","bg-white")
+}
+document.getElementById("transfer-button").classList.remove("border-gray-300","bg-white")
+document.getElementById("transfer-button").classList.add("border-[#0874f2]", "bg-[#0874f20d]")
+   
   });
 
 document.getElementById("bonus-button").addEventListener("click", function () {
   handleToggle("bonus-parent");
+
+  const formBtns = document.getElementsByClassName("form-btn")
+
+for (const btn of formBtns){
+  btn.classList.remove("border-[#0874f2]", "bg-[#0874f20d]")
+  btn.classList.add("border-gray-300","bg-white")
+}
+document.getElementById("bonus-button").classList.remove("border-gray-300","bg-white")
+document.getElementById("bonus-button").classList.add("border-[#0874f2]", "bg-[#0874f20d]")
+
 });
 
 document.getElementById("bill-button").addEventListener("click", function () {
   handleToggle("pay-bill-parent");
+
+  const formBtns = document.getElementsByClassName("form-btn")
+
+for (const btn of formBtns){
+  btn.classList.remove("border-[#0874f2]", "bg-[#0874f20d]")
+  btn.classList.add("border-gray-300","bg-white")
+}
+document.getElementById("bill-button").classList.remove("border-gray-300","bg-white")
+document.getElementById("bill-button").classList.add("border-[#0874f2]", "bg-[#0874f20d]")
+
 });
 
 document
   .getElementById("transactions-button")
   .addEventListener("click", function () {
     handleToggle("transactions-parent");
+
+  const formBtns = document.getElementsByClassName("form-btn")
+
+for (const btn of formBtns){
+  btn.classList.remove("border-[#0874f2]", "bg-[#0874f20d]")
+  btn.classList.add("border-gray-300","bg-white")
+}
+document.getElementById("transactions-button").classList.add("border-[#0874f2]", "bg-[#0874f20d]")
+document.getElementById("transactions-button").classList.remove("border-gray-300","bg-white")
+
   });
 
 // function to toggle
